@@ -539,8 +539,14 @@ button {
   margin-top: 1rem;
 }
 button {
-  margin-bottom: 0rem;
-  font-weight: 500;
+  padding: 0.1rem 0.8rem;
+  margin: 0;
+  color: white;
+  background-color: blue;
+  border: none;
+  border-radius: 10px;
+  font-weight: bolder;
+  font-size: x-small;
 }
 .contact-box {
   max-width: 90%;
