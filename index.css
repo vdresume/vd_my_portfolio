@@ -342,7 +342,7 @@ button {
   padding: 1rem;
 }
 
-@media (max-width: 768px) and (min-width: 425px) {
+@media (max-width: 1024px) and (min-width: 768px) {
   aside {
     position: absolute;
     z-index: 1;
@@ -402,7 +402,7 @@ button {
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 425px) and (min-width: 320px) {
   .logo img {
     width: 7rem;
     height: 7rem;
@@ -433,8 +433,8 @@ button {
   }
   .home-text {
     position: absolute;
-    top: 6rem;
-    left: 5rem;
+    top: 5rem;
+    left: 3rem;
   }
   .home img{
     width: 100%;
@@ -490,7 +490,7 @@ button {
     /* justify-content: space-around; */
   }
   .contact-box {
-    max-width: 50%;
+    max-width: 90%;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(1, 118px);
@@ -511,7 +511,7 @@ button {
     margin-top: 19rem;
   }
 }
-@media (max-width: 321px) {
+@media (max-width: 319px) and (min-width: 200px) {
   aside {
     position: absolute;
     z-index: 1;
@@ -534,10 +534,9 @@ button {
   }
   .home {
     width: 100%;
-    padding-left: 3rem;
   }
   .text {
-    font-size: medium;
+    font-size: small;
     padding: 0 0.5rem;
   }
   .home p {
