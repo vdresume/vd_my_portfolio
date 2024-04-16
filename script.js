@@ -53,3 +53,11 @@ function sendEmail(){
 // ajhyklclnjeyfkgv
 // qqsd ouyx ohdr pzoi
 // B4677CFC02509A2013F9FFAF4D608E2FB0FB 
+
+let docTitle = document.title;
+window.addEventListener("blur", () => {
+  document.title = "Thank You For Visting My portfolio 🎆";
+});
+window.addEventListener("focus", () => {
+  document.title = docTitle;
+});
