@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
+body {
   scroll-behavior: smooth;
 }
 
@@ -46,10 +46,10 @@ aside {
 }
 .hide-aside aside {
   display: block;
-  left: 0;  
+  left: 0;
   transition: 1s ease-in;
 }
-.close{
+.close {
   position: absolute;
   top: 0;
   right: 2px;
@@ -123,47 +123,41 @@ main {
   background-color: white;
   overflow-y: scroll;
   position: relative;
- 
 }
 /* home */
-.home-text{
-  /* background-color: #1c1e20;
-  display: inline-block;
-  padding: 0.2rem 1rem; */
+.home {
+  width: 100%;
+  height: inherit;
 }
-.text{
-  background-image: url(./Images/text-img-1.jpg);
+.home-text {
+  position: absolute;
+  top: 11rem;
+  left: 7rem;
+}
+.home img {
+  width: 100%;
+  height: inherit;
   background-size: contain;
   color: transparent;
   background-clip: text;
+  position: relative;
+}
+.text {
+  background-image: url(./Images/text-img.jpg);
+  background-repeat: repeat;
+  background-clip: text;
+  background-size: contain;
   font-size: xxx-large;
   transition: 2s ease-in;
-  font-family: fantasy;
-  display: inline;
-  border: 2px solid #6d2121;
-    border-top: outset;
-    padding: 0 0.5rem;
 }
-.home p{
+.home p {
   font-size: medium;
   margin-bottom: 0.5rem;
 }
-.home {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  background-color: white;
-  align-content: center;
-  background-image: url(./Images/home-bg.png);
-  background-size: contain;
-  text-align: justify;
-  padding-left: 6rem;
-  background-repeat: no-repeat;
-  transition: 1s ease-in;
-}
+
 .about {
   width: 100%;
-  height: 70vh;
+  height: auto;
   display: flex;
   flex-direction: column;
 }
@@ -317,21 +311,21 @@ form {
   justify-content: center;
   gap: 2rem;
 }
-form input{
+form input {
   height: 2rem;
   background-color: whitesmoke;
   border: none;
   border-radius: 10px;
   padding-left: 10px;
 }
-textarea{
+textarea {
   background-color: whitesmoke;
   border: none;
   border-radius: 10px;
   padding-left: 10px;
   padding-top: 10px;
 }
-button{
+button {
   padding: 0.5rem 1.5rem;
   color: white;
   background-color: blue;
@@ -340,167 +334,83 @@ button{
   font-weight: bolder;
 }
 /* footer */
-.footer-bottom{
+.footer-bottom {
   width: 100%;
   text-align: center;
   background-color: whitesmoke;
   align-items: center;
   padding: 1rem;
-
 }
 
-@media (max-width:768px) and (min-width:425px) {
+@media (max-width: 768px) and (min-width: 425px) {
   aside {
     position: absolute;
     z-index: 1;
     left: -270px;
     display: none;
     transition: all 10s ease-in;
-}
-#toggler{
-  display: block;
-}
-.close{
-  position: absolute;
-  top: 0;
-  right: 2px;
-  display: block;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  background-color: rgb(255, 255, 255);
-  border: none;
-  text-align: center;
-  padding-top: 5px;
-}
-.close:active{
-  transform: rotate(-180deg);
-  transition-duration: inherit;
-}
+  }
+  #toggler {
+    display: block;
+  }
+  .close {
+    position: absolute;
+    top: 0;
+    right: 2px;
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    text-align: center;
+    padding-top: 5px;
+  }
+  .close:active {
+    transform: rotate(-180deg);
+    transition-duration: inherit;
+  }
   .logo img {
     width: 9rem;
     height: 9rem;
-}
-.nav-iteam {
-  list-style: none;
-  font-size: small;
-}
-.home {
-  width: 100%;
-  height: 100vh;
- padding-bottom: 0rem;
-  padding-left: 5rem;
-  transition: all 2s ease-in;
-}
-.text{
-  font-size: xxx-large;
+  }
+  .nav-iteam {
+    list-style: none;
+    font-size: small;
+  }
+  .home-text {
+    position: absolute;
+    top: 8rem;
+    left: 5rem;
+  }
+  .home img{
+    width: 100%;
+    height: inherit;
+    background-size: contain;
+    color: transparent;
+    background-clip: text;
+    position: relative;
+   
+  }
+  .text {
+    font-size: x-large;
     padding: 0 0.5rem;
-}
-.home p{
-  font-size: small;
-  padding:  0.5rem;
-}
+  }
+  .home p {
+    font-size: small;
+    padding: 0.5rem;
+  }
 }
 
-@media  (max-width:426px) {
+@media (max-width: 426px) {
   .logo img {
     width: 7rem;
     height: 7rem;
-}
-.nav-iteam {
-  list-style: none;
-  font-size: small;
-}
-aside {
-  position: absolute;
-  z-index: 1;
-  left: -270px;
-  display: none;
-  width: 11rem;
-  gap: 1rem;
-}
-aside h1{
-  font-size: medium;
-}
-#toggler{
-display: block;
-}
-.close{
-position: absolute;
-top: 0;
-right: 2px;
-display: block;
-}
-  .home {
-
-    width: 100%;
-    height: 55vh;
-    padding-left: 3rem;
-}
-.text{
-  font-size: x-large;
-    padding: 0 0.5rem;
-}
-.home p{
-  font-size: x-small;
-  padding:  0.5rem;
-}
-.about .child-1 {
-  margin-top: 1rem;
-}
-.about .child-3 {
-  height: 100vh;
-  display: grid;
-}
-.skills {
-  margin-top: 17rem;
-}
-.resume-box {
-  display: grid;
-  height: 280px;
-}
-.resume-img{
-  width: 150px;
-  height: 150px;
-}
-.resume-box h1{
-  font-size: medium;
-}
-.resume-box p{
-  text-align: justify;
-}
-.detail-fill {
-  width: 100%;
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* justify-content: space-around; */
-}
-.contact-box {
-  max-width: 50%;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(1, 118px);
-  grid-template-rows: repeat(3, 103px);
-  gap: 2rem;
-  padding-top: 0rem;
-  transition: all 2s ease-in;
-}
-form {
-  margin-top: 1rem;
-  max-width: 80%;
-}
-button {
-  margin-bottom: 1rem;
-  font-weight: 500;
-}
-.footer-bottom {
-  margin-top: 19rem;
-}
-
-}
-@media (max-width:321px){
+  }
+  .nav-iteam {
+    list-style: none;
+    font-size: small;
+  }
   aside {
     position: absolute;
     z-index: 1;
@@ -509,66 +419,166 @@ button {
     width: 11rem;
     gap: 1rem;
   }
-  aside h1{
+  aside h1 {
     font-size: medium;
   }
-  #toggler{
-  display: block;
+  #toggler {
+    display: block;
   }
-  .close{
-  position: absolute;
-  top: 0;
-  right: 2px;
-  display: block;
+  .close {
+    position: absolute;
+    top: 0;
+    right: 2px;
+    display: block;
   }
-  .home {
+  .home-text {
+    position: absolute;
+    top: 6rem;
+    left: 5rem;
+  }
+  .home img{
     width: 100%;
-    height: 40vh;
-    padding-left: 3rem;
-}
-.text{
-  font-size: large;
+    height: inherit;
+    background-size: contain;
+    position: relative;
+   
+  }
+  .text {
+    font-size: large;
     padding: 0 0.5rem;
-}
-.home p{
-  font-size: x-small;
-  padding:  0.2rem;
-}
-.about .child-1 {
-  margin-top: 1rem;
-}
-button {
-  padding: 0.1rem 0.8rem;
-  margin: 0;
-  color: white;
-  background-color: blue;
-  border: none;
-  border-radius: 10px;
-  font-weight: bolder;
-  font-size: x-small;
-}
-.contact-box {
-  max-width: 90%;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(1, 92px);
-  grid-template-rows: repeat(3, 88px);
-}
-.about .child-3 .box {
-  width: 250px;
-  height: 100px;
-  display: flex;
-  font-size: small;
-}
-.about .child-3 {
-  height: 100vh;
-  display: grid;
-}
+  }
+  .home p {
+    font-size: x-small;
+    padding: 0.5rem;
+  }
+  .about {
+    width: 100%;
+    height: auto;
+    display: grid;
+    margin: 0;
+    padding: 0;
+  }
+  .about .child-1 {
+    margin-top: 1rem;
+  }
+  .about .child-3 {
+    height: auto;
+    display: grid;
+  }
+  .skills {
+  }
   .resume-box {
     display: grid;
     height: 280px;
   }
-  .resume-box h1{
+  .resume-img {
+    width: 150px;
+    height: 150px;
+  }
+  .resume-box h1 {
+    font-size: medium;
+  }
+  .resume-box p {
+    text-align: justify;
+  }
+  .detail-fill {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-around; */
+  }
+  .contact-box {
+    max-width: 50%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 118px);
+    grid-template-rows: repeat(3, 103px);
+    gap: 2rem;
+    padding-top: 0rem;
+    transition: all 2s ease-in;
+  }
+  form {
+    margin-top: 1rem;
+    max-width: 80%;
+  }
+  button {
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+  .footer-bottom {
+    margin-top: 19rem;
+  }
+}
+@media (max-width: 321px) {
+  aside {
+    position: absolute;
+    z-index: 1;
+    left: -270px;
+    display: none;
+    width: 11rem;
+    gap: 1rem;
+  }
+  aside h1 {
+    font-size: medium;
+  }
+  #toggler {
+    display: block;
+  }
+  .close {
+    position: absolute;
+    top: 0;
+    right: 2px;
+    display: block;
+  }
+  .home {
+    width: 100%;
+    padding-left: 3rem;
+  }
+  .text {
+    font-size: medium;
+    padding: 0 0.5rem;
+  }
+  .home p {
+    font-size: x-small;
+    padding: 0.2rem;
+  }
+  .about .child-1 {
+    margin-top: 1rem;
+  }
+  button {
+    padding: 0.1rem 0.8rem;
+    margin: 0;
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: x-small;
+  }
+  .contact-box {
+    max-width: 90%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 92px);
+    grid-template-rows: repeat(3, 88px);
+  }
+  .about .child-3 .box {
+    width: 250px;
+    height: 100px;
+    display: flex;
+    font-size: small;
+  }
+  .about .child-3 {
+    /* height: 100vh; */
+    display: grid;
+  }
+  .resume-box {
+    display: grid;
+    height: 280px;
+  }
+  .resume-box h1 {
     font-size: small;
   }
   .contact-box h6 {
@@ -579,4 +589,3 @@ button {
     max-width: 80%;
   }
 }
-
