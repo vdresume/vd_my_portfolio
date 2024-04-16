@@ -442,6 +442,114 @@ button {
     font-size: small;
   }
 }
+@media (max-width: 767px) and (min-width: 426px) {
+    aside {
+      position: absolute;
+      z-index: 1;
+      left: -270px;
+      display: none;
+      transition: all 10s ease-in;
+    }
+    #toggler {
+      display: block;
+    }
+    .close {
+      position: absolute;
+      top: 0;
+      right: 2px;
+      display: block;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      background-color: rgb(255, 255, 255);
+      border: none;
+      text-align: center;
+      padding-top: 5px;
+    }
+    .close:active {
+      transform: rotate(-180deg);
+      transition-duration: inherit;
+    }
+    .logo img {
+      width: 9rem;
+      height: 9rem;
+    }
+    .nav-iteam {
+      list-style: none;
+      font-size: small;
+    }
+    .home-text {
+      position: absolute;
+      top: 5rem;
+      left: 2.5rem;
+    }
+    .text {
+      font-size: x-large;
+      padding: 0 0.5rem;
+    }
+    .home p {
+      font-size: small;
+      padding: 0.5rem;
+    }
+    .resume-box p{
+      font-size: small;
+    }
+    .about {
+      width: 100%;
+      height: auto;
+      display: grid;
+      margin: 0;
+      padding: 0;
+    }
+    .about .child-1 {
+      margin-top: 1rem;
+    }
+    .about .child-3 {
+      height: auto;
+      display: grid;
+    }
+    .resume-box {
+      display: grid;
+      height: 280px;
+    }
+    .resume-img {
+      width: 150px;
+      height: 150px;
+    }
+    .resume-box h1 {
+      font-size: medium;
+    }
+    .resume-box p {
+      text-align: justify;
+    }
+    .detail-fill {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* justify-content: space-around; */
+    }
+    .contact-box {
+      max-width: 90%;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(1, 118px);
+      grid-template-rows: repeat(3, 103px);
+      gap: 2rem;
+      padding-top: 0rem;
+      transition: all 2s ease-in;
+    }
+    form {
+      margin-top: 1rem;
+      height: auto;
+      max-width: 80%;
+    }
+    button {
+      font-weight: 500;
+    }
+   
+}
 
 @media (max-width: 425px) and (min-width: 320px) {
   .logo img {
@@ -475,7 +583,7 @@ button {
   .home-text {
     position: absolute;
     top: 5rem;
-    left: 3rem;
+    left: 2.5rem;
   }
   .home img{
     width: 100%;
@@ -569,8 +677,10 @@ button {
     right: 2px;
     display: block;
   }
-  .home {
-    width: 100%;
+  .home-text {
+    position: absolute;
+    top: 3rem;
+    left: 2.5rem;
   }
   .text {
     font-size: small;
