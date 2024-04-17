@@ -157,7 +157,7 @@ main {
   background-size: cover;
   font-size: xxx-large;
   transition: 2s ease-in;
-  font-family: fantasy;
+  font-family: "Rubik Spray Paint", system-ui;
 
 }
 .home p {
