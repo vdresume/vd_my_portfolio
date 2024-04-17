@@ -442,7 +442,7 @@ button {
   }
 }
 
-@media (max-width: 767px) and (min-width: 426px) {
+@media (max-width: 767px) and (min-width: 427px) {
     aside {
       position: absolute;
       z-index: 1;
@@ -576,7 +576,7 @@ button {
     z-index: 1;
     left: -270px;
     display: none;
-    width: 11rem;
+    width: 15rem;
     gap: 1rem;
   }
   aside h1 {
@@ -604,7 +604,7 @@ button {
    
   }
   .text {
-    font-size: large;
+    font-size: medium;
     padding: 0 0.5rem;
   }
   .home p {
@@ -669,7 +669,7 @@ button {
  
 }
 
-@media (max-width: 319px) and (min-width: 200px) {
+@media (max-width: 319px) {
   aside {
     position: absolute;
     z-index: 1;
@@ -677,10 +677,17 @@ button {
     display: none;
     width: 11rem;
     gap: 1rem;
+    font-size: x-small;
   }
-  aside h1 {
-    font-size: medium;
-  }
+  p {
+    font-size: x-small;
+}
+
+  .logo img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
   #toggler {
     display: block;
   }
@@ -693,10 +700,10 @@ button {
   .home-text {
     position: absolute;
     top: 3rem;
-    left: 2.5rem;
+    left: 1.7rem;
   }
   .text {
-    font-size: small;
+    font-size: x-small;
     padding: 0 0.5rem;
   }
   .home p {
@@ -713,7 +720,7 @@ button {
     background-color: blue;
     border: none;
     border-radius: 10px;
-    font-weight: bolder;
+    font-weight: 200;
     font-size: x-small;
   }
   .contact-box {
