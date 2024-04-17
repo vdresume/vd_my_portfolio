@@ -567,20 +567,9 @@ button {
     width: 7rem;
     height: 7rem;
   }
-  .nav-iteam {
-    list-style: none;
-    font-size: small;
-  }
   aside {
-    position: absolute;
-    z-index: 1;
-    left: -270px;
-    display: none;
     width: 15rem;
     gap: 1rem;
-  }
-  aside h1 {
-    font-size: medium;
   }
   #toggler {
     display: block;
